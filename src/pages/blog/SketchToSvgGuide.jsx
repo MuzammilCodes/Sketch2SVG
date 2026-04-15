@@ -1,5 +1,5 @@
 import SEO from "../../components/SEO";
-
+import "../../styles/blog.css";
 export default function SketchToSvgGuide() {
   const faq = [
     {
