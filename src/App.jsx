@@ -121,7 +121,7 @@ export default function App() {
 
       {/* ── Header ── */}
       <header className={s.header}>
-        <Link to="/blog/sketch-to-svg-guide" className={s.blogLink}>Blog</Link>
+       
         <div className={s.logoWrap}>
           <PenNib />
           <div>
@@ -129,7 +129,7 @@ export default function App() {
             <p className={s.logoTagline}>raster to vector, beautifully</p>
           </div>
         </div>
-
+       <Link to="/blog/sketch-to-svg-guide" className={s.blogLink}>Blog</Link>
       </header>
 
       {/* ── Hero intro ── */}
