@@ -1,5 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react'
 import s from './App.module.css'
+import SketchToSvgGuide from "./pages/blog/SketchToSvgGuide";
+import { useLocation, Link } from "react-router-dom";
 
 const API = import.meta.env.VITE_API_URL || 'https://svgconverterbackend.onrender.com'
 
@@ -12,6 +14,7 @@ const DEFAULTS = {
 
 // ─────────────────────────────────────────────────────────────────
 export default function App() {
+  const location = useLocation();
   const [file,        setFile]        = useState(null)
   const [preview,     setPreview]     = useState(null)
   const [svgOutput,   setSvgOutput]   = useState(null)
@@ -107,7 +110,9 @@ export default function App() {
   }
 
   const set = (k, v) => setParams(p => ({ ...p, [k]: v }))
-
+  if (location.pathname === "/blog/sketch-to-svg-guide") {
+    return <SketchToSvgGuide />;
+  }
   return (
     <div className={s.page}>
 
@@ -116,6 +121,7 @@ export default function App() {
 
       {/* ── Header ── */}
       <header className={s.header}>
+        <Link to="/blog/sketch-to-svg-guide" className={s.blogLink}>Blog</Link>
         <div className={s.logoWrap}>
           <PenNib />
           <div>
