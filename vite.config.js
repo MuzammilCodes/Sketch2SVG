@@ -4,13 +4,7 @@ import prerender from 'vite-plugin-prerender'
 
 export default defineConfig({
   plugins: [
-    react(),
-    prerender({
-      routes: [
-        '/', 
-        '/blog/sketch-to-svg-guide'
-      ],
-    }),
+    react()
   ],
   build: {
     outDir: 'dist',
