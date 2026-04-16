@@ -2,7 +2,8 @@ import { useState, useRef, useCallback, useEffect } from 'react'
 import s from './App.module.css'
 import SketchToSvgGuide from "./pages/blog/SketchToSvgGuide";
 import { useLocation, Link } from "react-router-dom";
-
+import ImageToSvgGuide from "./pages/blog/ImageToSvgGuide";
+import SvgVsPngGuide from "./pages/blog/SvgVsPngGuide";
 const API = import.meta.env.VITE_API_URL || 'https://svgconverterbackend.onrender.com'
 
 const DEFAULTS = {
@@ -110,9 +111,17 @@ export default function App() {
   }
 
   const set = (k, v) => setParams(p => ({ ...p, [k]: v }))
-  if (location.pathname === "/blog/sketch-to-svg-guide") {
-    return <SketchToSvgGuide />;
-  }
+if (location.pathname === "/blog/sketch-to-svg-guide") {
+  return <SketchToSvgGuide />;
+}
+
+if (location.pathname === "/blog/image-to-svg-guide") {
+  return <ImageToSvgGuide />;
+}
+
+if (location.pathname === "/blog/svg-vs-png") {
+  return <SvgVsPngGuide />;
+}
   return (
     <div className={s.page}>
 
@@ -130,6 +139,8 @@ export default function App() {
           </div>
         </div>
        <Link to="/blog/sketch-to-svg-guide" className={s.blogLink}>Blog</Link>
+       <Link to="/blog/image-to-svg-guide" className={s.blogLink}>Image to SVG Guide</Link>
+       <Link to="/blog/svg-vs-png" className={s.blogLink}>SVG vs PNG</Link>
       </header>
 
       {/* ── Hero intro ── */}
