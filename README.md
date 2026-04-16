@@ -1,56 +1,71 @@
-# Sketch2SVG — Frontend
+# 🎨 Sketch2SVG — Convert Image / Sketch to SVG Online
 
-Warm, handcrafted React UI for the Sketch2SVG backend API.
+🚀 **Live Tool:** https://sketch2svg.netlify.app  
 
-## Stack
-- React 18 + Vite
-- CSS Modules (no external UI libraries)
-- Fraunces + Lora + DM Mono typefaces
+> Free online tool to convert image sketch to SVG — fast, scalable, and developer-friendly.
 
-## Local dev
+---
+
+## ✨ Features
+
+- 🔄 Convert image sketch to SVG instantly  
+- ⚡ Fast and lightweight processing  
+- 🎯 Adjustable conversion settings  
+- 📥 Download SVG output  
+- 📋 Copy SVG markup  
+- 🖼 Supports PNG, JPG, BMP, GIF, WebP  
+
+---
+
+## 🧠 Why Use SVG?
+
+SVG (Scalable Vector Graphics) is ideal for modern web development:
+
+- 📱 Scales perfectly on all devices  
+- ⚡ Smaller file sizes  
+- 🎨 Fully customizable via CSS  
+- 🔄 Supports animation  
+
+---
+
+## 🛠 How It Works
+
+1. Upload your image  
+2. Adjust conversion settings (optional)  
+3. Click **Convert to SVG**  
+4. Download or copy the SVG  
+
+---
+
+## 🔗 Related Guides
+
+- 📘 https://sketch2svg.netlify.app/blog/sketch-to-svg-guide  
+- 📘 https://sketch2svg.netlify.app/blog/image-to-svg-guide  
+- 📘 https://sketch2svg.netlify.app/blog/svg-vs-png  
+
+---
+
+## 💡 Use Cases
+
+- Web icons  
+- Logos  
+- UI assets  
+- Illustrations  
+
+---
+
+## ⚙️ Tech Stack
+
+- React + Vite  
+- Netlify (Frontend Hosting)  
+- Python (Backend API on Render)  
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/MuzammilCodes/Sketch2SVG
+cd Sketch2SVG
 npm install
 npm run dev
-# → http://localhost:5173
-```
-
-## Environment
-
-`.env` is pre-wired to your Render backend:
-
-```
-VITE_API_URL=https://svgconverterbackend.onrender.com
-```
-
-## Deploy to Netlify
-
-### Option A — Netlify CLI (fastest)
-
-```bash
-npm install -g netlify-cli
-npm run build
-netlify deploy --prod --dir=dist
-```
-
-### Option B — Netlify UI (drag & drop)
-
-1. Run `npm run build` — produces a `dist/` folder
-2. Go to https://app.netlify.com
-3. Drag the `dist/` folder onto the Netlify dashboard
-4. Done — your site is live ✓
-
-### Option C — Git deploy (recommended for ongoing updates)
-
-1. Push this folder to GitHub
-2. In Netlify: **Add new site → Import from Git**
-3. Pick your repo
-4. Set build settings:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-5. Add environment variable in Netlify UI:
-   - Key: `VITE_API_URL`
-   - Value: `https://svgconverterbackend.onrender.com`
-6. Deploy
-
-The included `netlify.toml` handles SPA routing automatically.
