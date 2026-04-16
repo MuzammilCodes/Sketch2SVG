@@ -140,8 +140,8 @@ if (location.pathname === "/blog/svg-vs-png") {
         </div>
         <nav className={s.navLinks}>
           <Link to="/blog/sketch-to-svg-guide" className={s.blogLink}>Blog</Link>
-          <Link to="/image-to-svg-guide" className={s.blogLink}>Image to SVG Guide</Link>
-          <Link to="/svg-vs-png" className={s.blogLink}>SVG vs PNG</Link>
+          <Link to="/blog/image-to-svg-guide" className={s.blogLink}>Image to SVG Guide</Link>
+          <Link to="/blog/svg-vs-png" className={s.blogLink}>SVG vs PNG</Link>
         </nav>
       </header>
 
