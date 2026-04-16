@@ -4,11 +4,25 @@
   <url>
     <loc>https://sketch2svg.netlify.app/</loc>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
   </url>
 
   <url>
-    <loc>https://sketch2svg.netlify.app/blog</loc>
+    <loc>https://sketch2svg.netlify.app/blog/sketch-to-svg-guide</loc>
     <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sketch2svg.netlify.app/blog/image-to-svg-guide</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://sketch2svg.netlify.app/blog/svg-vs-png</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
 </urlset>
