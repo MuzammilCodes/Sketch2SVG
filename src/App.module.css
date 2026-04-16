@@ -830,12 +830,19 @@
   }
 }
 
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
 .blogLink {
   text-decoration: none;
   font-weight: 500;
   color: #333;
+  font-size: 0.9rem;
 }
 
 .blogLink:hover {
-  color: #000;
+  color: var(--terracotta);
 }
