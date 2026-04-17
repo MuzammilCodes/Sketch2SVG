@@ -148,12 +148,10 @@ if (location.pathname === "/blog/svg-vs-png") {
       {/* ── Hero intro ── */}
       <section className={s.hero}>
         <h2 className={s.heroTitle}>
-          Give your sketches<br />
-          <em>a scalable life.</em>
+          Convert Images to SVG Instantly<br />
         </h2>
         <p className={s.heroBody}>
-          Drop any PNG, JPG, or BMP — we'll trace it into a clean, infinitely-scalable
-          SVG. No login. No watermarks.
+          Upload PNG, JPG, BMP, or any image and convert it into clean, scalable SVG in seconds. No login. No watermark.
         </p>
       </section>
 
