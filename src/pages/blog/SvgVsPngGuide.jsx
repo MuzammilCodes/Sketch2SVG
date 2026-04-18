@@ -1,6 +1,6 @@
 import SEO from "../../components/SEO";
 import Header from "../../components/Header";
-import s from '../../App.module.css'
+import s from "./Blog.module.css";
 
 export default function SvgVsPngGuide() {
   const faq = [
