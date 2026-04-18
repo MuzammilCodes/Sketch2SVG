@@ -40,7 +40,7 @@ export default function SvgVsPngGuide() {
 
   return (
     <>
-      <div style={{ maxWidth: "1160px", margin: "0 auto" }}>
+      <div style={{ maxWidth: "1160px", margin: "0 auto", padding: "0px 28px 60px" }}>
         <Header />
       </div>
       <div className={s.blogContainer}>
