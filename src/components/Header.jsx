@@ -3,6 +3,7 @@ import s from "../App.module.css";
 
 export default function Header() {
   return (
+    <div className={s.topBand} />
     <header className={s.header}>
       <Link to="/" className={s.logoWrap}>
         <PenNib />
