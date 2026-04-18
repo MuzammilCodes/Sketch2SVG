@@ -127,7 +127,7 @@ if (location.pathname === "/blog/svg-vs-png") {
     <div className={s.page}>
 
       {/* ── Decorative top border ── */}
-      <div className={s.topBand} />
+
 
       {/* ── Header ── */}
       <Header />
