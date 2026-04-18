@@ -40,7 +40,9 @@ export default function SvgVsPngGuide() {
 
   return (
     <>
-      <Header />
+      <div style={{ maxWidth: "1160px", margin: "0 auto" }}>
+        <Header />
+      </div>
       <div className={s.blogContainer}>
         <SEO
           title="SVG vs PNG: Which Format is Better for Web?"
