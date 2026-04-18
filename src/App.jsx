@@ -4,6 +4,7 @@ import SketchToSvgGuide from "./pages/blog/SketchToSvgGuide";
 import { useLocation, Link } from "react-router-dom";
 import ImageToSvgGuide from "./pages/blog/ImageToSvgGuide";
 import SvgVsPngGuide from "./pages/blog/SvgVsPngGuide";
+import Header from "./components/Header";
 const API = import.meta.env.VITE_API_URL || 'https://svgconverterbackend.onrender.com'
 
 const DEFAULTS = {
@@ -129,21 +130,7 @@ if (location.pathname === "/blog/svg-vs-png") {
       <div className={s.topBand} />
 
       {/* ── Header ── */}
-      <header className={s.header}>
-       
-        <div className={s.logoWrap}>
-          <PenNib />
-          <div>
-            <h1 className={s.logoName}>Sketch<span className={s.logoTwo}>2</span>SVG</h1>
-            <p className={s.logoTagline}>raster to vector, beautifully</p>
-          </div>
-        </div>
-        <nav className={s.navLinks}>
-          <Link to="/blog/sketch-to-svg-guide" className={s.blogLink}>Blog</Link>
-          <Link to="/blog/image-to-svg-guide" className={s.blogLink}>Image to SVG Guide</Link>
-          <Link to="/blog/svg-vs-png" className={s.blogLink}>SVG vs PNG</Link>
-        </nav>
-      </header>
+      <Header />
 
       {/* ── Hero intro ── */}
       <section className={s.hero}>
